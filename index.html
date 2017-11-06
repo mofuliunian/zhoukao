@@ -5,11 +5,70 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="fonts/iconfont.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
 <body>
     <div class="wrap">
-
+        <header class="header">
+            <div class="left">
+                <span class="wz">北京市<i class="iconfont icon-xiala"></i></span>
+            </div>
+            <div class="centent">
+                <img src="images/header.gif" alt="">
+            </div>
+            <div class="right">
+                <div><i class="iconfont icon-fangdajing"></i><p>搜索</p></div>
+                <div><i class="iconfont icon-kefu"></i><p>客服</p></div>
+            </div>
+        </header>
+        <main class="main">
+            <ul class="list">
+                <li>
+                    <i class="iconfont icon-shezhi"></i>
+                    <span>换轮胎</span>
+                    <b class="t">￥359.00起</b>
+                </li>
+                <li>
+                    <i class="iconfont icon-shezhi"></i>
+                    <span>做保养</span>
+                    <b>精确匹配</b>
+                </li>
+                <li>
+                    <i class="iconfont icon-shezhi"></i>
+                    <span>洗车</span>
+                    <b>优质服务</b>
+                </li>
+                <li>
+                    <i class="iconfont icon-shezhi"></i>
+                    <span>领红包</span>
+                    <b>免单天天送</b>
+                </li>
+            </ul>
+            <div class="centent">
+                <div class="box"><i class="iconfont icon-shezhi"></i><span>自助小保养</span></div>
+                <div class="box"><i class="iconfont icon-shezhi"></i><span>自助小保养</span></div>
+                <div class="box"><i class="iconfont icon-shezhi"></i><span>自助小保养</span></div>
+                <div class="box"><i class="iconfont icon-shezhi"></i><span>自助小保养</span></div>
+                <div class="box"><i class="iconfont icon-shezhi"></i><span>自助小保养</span></div>
+                <div class="bigbox"><img src="images/cen.gif" alt=""></div>
+                <div class="box"><i class="iconfont icon-shezhi"></i><span>自助小保养</span></div>
+                <div class="box"><i class="iconfont icon-shezhi"></i><span>自助小保养</span></div>
+                <div class="box"><i class="iconfont icon-shezhi"></i><span>自助小保养</span></div>
+                <div class="box"><i class="iconfont icon-shezhi"></i><span>自助小保养</span></div>
+                <div class="box"><i class="iconfont icon-shezhi"></i><span>自助小保养</span></div>
+            </div>
+            <div class="banner">
+                <img src="images/banner.gif" alt="">
+            </div>
+        </main>
+        <div class="footer">
+            <span><i class="iconfont icon-shezhi"></i><b>首页</b></span>
+            <span><i class="iconfont icon-shezhi"></i><b>轮胎</b></span>
+            <span><i class="iconfont icon-shezhi"></i><b>门店</b></span>
+            <span><i class="iconfont icon-shezhi"></i><b>我的</b></span>
+        </div>
     </div>
 </body>
 <script src="js/jquery-2.1.1.js"></script>
@@ -20,5 +79,7 @@
             console.log(data);
         }
     })
+    var w = $('.box').innerWidth();
+    $('.box').innerHeight(w);
 </script>
 </html>
